@@ -1,1 +1,49 @@
-{}
+{
+  "@context": [
+    "https://www.w3.org/2018/credentials/v1",
+    "https://trustvc.io/context/coo.json",
+    "https://trustvc.io/context/attachments-context.json",
+    "https://trustvc.io/context/render-method-context.json",
+    "https://trustvc.io/context/qrcode-context.json",
+    "https://w3id.org/security/bbs/v1"
+  ],
+  "id": "urn:bnid:_:01975381-0778-7664-bbb5-6b3dfc039c5b",
+  "type": "VerifiableCredential",
+  "qrCode": {
+    "id": "urn:bnid:_:c14n1",
+    "type": "TrustVCQRCode",
+    "uri": "https://actions.tradetrust.io?q=%7B%22type%22%3A%22DOCUMENT%22%2C%22payload%22%3A%7B%22uri%22%3A%22https%3A%2F%2Fgallery.tradetrust.io%2Fstatic%2Fcertificate-of-origin-redacted.json%22%2C%22redirect%22%3A%22https%3A%2F%2Fv5-token-registry.tradetrust.io%2F%22%2C%22chainId%22%3A%22101010%22%7D%7D"
+  },
+  "renderMethod": [
+    {
+      "@id": "urn:bnid:_:c14n4",
+      "id": "https://generic-templates.tradetrust.io",
+      "templateName": "CHAFTA_COO",
+      "type": "EMBEDDED_RENDERER"
+    }
+  ],
+  "credentialSubject": {
+    "id": "urn:bnid:_:c14n5",
+    "type": "Coo",
+    "exportCountryCode": "In",
+    "exporterCityName": "Navi Mumbai",
+    "exporterCountryCode": "IN",
+    "exporterCountrySubDivisionName": "Maharashtra",
+    "exporterId": "EXP-IN-00987",
+    "exporterLine1": "12/F, Industrial Plaza",
+    "exporterLine2": "Near MIDC, Vashi",
+    "exporterName": "Saffron Agro Exports Pvt. Ltd.",
+    "exporterPostcode": "400703",
+    "supplyChainConsignmentId": "CONS-EX456789"
+  },
+  "issuanceDate": "2025-06-06T09:05:43.517Z",
+  "issuer": "did:web:trustvc.github.io:did:1",
+  "proof": {
+    "type": "BbsBlsSignatureProof2020",
+    "created": "2025-06-09T07:04:14Z",
+    "nonce": "H8EFeOCLMJGEa88SAuSGHN772cyn8X3vCbl7IaQ3+ZelGr3x5rhTOQM9LWyNAIW88og=",
+    "proofPurpose": "assertionMethod",
+    "proofValue": "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",
+    "verificationMethod": "did:web:trustvc.github.io:did:1#keys-1"
+  }
+}
