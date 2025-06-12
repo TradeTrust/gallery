@@ -25,7 +25,7 @@ export const ShowcaseContent = (): JSX.Element => {
           key={doc.id}
           className="flex flex-wrap min-w-[340px] min-h-72 items-start gap-0 w-full rounded-xl bg-white relative overflow-visible"
         >
-          <DocumentPreview image={doc.image} imageAlt={doc.imageAlt} />
+          <DocumentPreview image={doc.image} name={doc.title} imageAlt={doc.imageAlt} />
           <DocumentInfo
             id={doc.id}
             badgeColor={doc.badgeColor}
