@@ -1,1 +1,0 @@
-export { GalleryMainPage } from './GalleryMainPage';

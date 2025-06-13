@@ -1,14 +1,63 @@
+@tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@font-face {
+  font-family: 'Gilroy';
+  src: url('/fonts/Gilroy-Bold.woff2') format('woff2'),
+       url('/fonts/Gilroy-Bold.woff') format('woff');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Gilroy';
+  src: url('/fonts/Gilroy-Medium.woff2') format('woff2'),
+       url('/fonts/Gilroy-Medium.woff') format('woff');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
 
 @layer components {
   .all-\[unset\] {
     all: unset;
   }
+
+  .nav-item {
+    font-family: "Gilroy", Helvetica;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 24px;
+    letter-spacing: 0px;
+    vertical-align: middle;
+    color: var(--neutralgrey-50, #636569);
+  }
+
+  .mobile-nav-item {
+    font-family: "Gilroy", Helvetica;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 16px;
+    letter-spacing: 0px;
+    vertical-align: middle;
+    color: var(--neutralsgrey-2, #6E787F);
+  }
+
+  .paragraph {
+    font-family: "Gilroy", Helvetica;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    letter-spacing: 0px;
+    text-align: center;
+    vertical-align: middle;
+    color: var(--now-neutralsgrey-1, #454B50);
+  }
 }
 
 :root {
-  --accent-1: rgba(255, 130, 0, 1);
   --app-primary: rgba(45, 95, 170, 1);
   --doc-header: rgba(76, 85, 99, 1);
   --h1-font-family: "Ubuntu", Helvetica;
@@ -35,6 +84,7 @@
   --headers-cards-section-header-font-weight: 700;
   --headers-cards-section-header-letter-spacing: 0px;
   --headers-cards-section-header-line-height: 24px;
+  --headers-cards-section-header-vertical-align: middle;
   --headers-paragraphs-header-font-family: "Gilroy", Helvetica;
   --headers-paragraphs-header-font-size: 16px;
   --headers-paragraphs-header-font-style: normal;
@@ -45,7 +95,7 @@
     198,
     200,
     204,
-    0.33
+    1
   );
   --interactive-componentoverlayenabledcontentprimary-bluedefault: rgba(
     45,
@@ -105,7 +155,7 @@
   --micro-metadata-medium-micro-metadata-font-weight: 500;
   --micro-metadata-medium-micro-metadata-letter-spacing: 0px;
   --micro-metadata-medium-micro-metadata-line-height: 16px;
-  --neutralgrey-50: rgba(96, 99, 107, 1);
+  --neutralgrey-50: rgba(99, 101, 105, 1);
   --neutralsgrey-1: rgba(69, 75, 80, 1);
   --neutralsgrey-2: rgba(110, 120, 127, 1);
   --neutralsgrey-6: rgba(231, 234, 236, 1);
@@ -118,10 +168,6 @@
   --shadow-default: 0px 4px 20px 0px rgba(0, 0, 0, 0.15);
   --white: rgba(255, 255, 255, 1);
 }
-
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
 
 @layer base {
   :root {
@@ -189,9 +235,7 @@
 
     --radius: 0.5rem;
   }
-}
 
-@layer base {
   * {
     @apply border-border;
   }

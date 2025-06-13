@@ -1,0 +1,79 @@
+{
+  "@context": [
+    "https://www.w3.org/2018/credentials/v1",
+    "https://trustvc.io/context/invoice.json",
+    "https://trustvc.io/context/render-method-context.json",
+    "https://trustvc.io/context/qrcode-context.json",
+    "https://w3id.org/security/bbs/v1",
+    "https://w3id.org/vc/status-list/2021/v1"
+  ],
+  "renderMethod": [
+    {
+      "type": "EMBEDDED_RENDERER",
+      "templateName": "INVOICE",
+      "id": "https://generic-templates.tradetrust.io"
+    }
+  ],
+  "credentialStatus": [
+    {
+      "id": "https://trustvc.github.io/did/credentials/statuslist/sample#2",
+      "statusListCredential": "https://trustvc.github.io/did/credentials/statuslist/sample",
+      "statusListIndex": "2",
+      "statusPurpose": "revocation",
+      "type": "StatusList2021Entry"
+    }
+  ],
+  "credentialSubject": {
+    "type": ["Invoice"],
+    "billFromName": "Saffron Agro Exports Pvt. Ltd.",
+    "billFromStreetAddress": "12/F, Industrial Plaza, Near MIDC",
+    "billFromCity": "Navi Mumbai",
+    "billFromPostalCode": "400703",
+    "billFromPhoneNumber": "+91-22-4455-9988",
+    "billToName": "David Thomson",
+    "billToEmail": "david.thomson@goldenharvest.co.uk",
+    "billToCompanyName": "Golden Harvest Foods Ltd.",
+    "billToCompanyStreetAddress": "Unit 17, Royal Wharf, Docklands Industrial Area",
+    "billToCompanyCity": "London",
+    "billToCompanyPostalCode": "E16 2AA",
+    "billToCompanyPhoneNumber": "+44-20-8899-4455",
+    "billableItems": [
+      {
+        "billableItemsDescription": "Organic Basmati Rice (20kg Bags)",
+        "billableItemsQuantity": "100",
+        "billableItemsUnitPrice": "125",
+        "billableItemsAmount": "12500"
+      },
+      {
+        "billableItemsDescription": "Vacuum-Packed Almonds (10kg)",
+        "billableItemsQuantity": "50",
+        "billableItemsUnitPrice": "80",
+        "billableItemsAmount": "4000"
+      }
+    ],
+    "invoiceId": "INV-20250604-001",
+    "invoiceName": "Export of Organic Basmati Rice",
+    "date": "2025-06-04",
+    "customerId": "CUST-UK-55678",
+    "terms": "Net 30 Days",
+    "subtotal": "$16,500.00",
+    "tax": "5%",
+    "taxTotal": "$825.00",
+    "total": "$17,325.00"
+  },
+  "type": ["VerifiableCredential"],
+  "qrCode": {
+    "type": "TrustVCQRCode",
+    "uri": "https://actions.tradetrust.io?q=%7B%22type%22%3A%22DOCUMENT%22%2C%22payload%22%3A%7B%22uri%22%3A%22https%3A%2F%2Fgallery.tradetrust.io%2Fstatic%2Finvoice-revoked.json%22%2C%22redirect%22%3A%22https%3A%2F%2Fv5-token-registry.tradetrust.io%2F%22%2C%22chainId%22%3A%22101010%22%7D%7D"
+  },
+  "issuer": "did:web:trustvc.github.io:did:1",
+  "issuanceDate": "2025-06-09T09:36:15.971Z",
+  "id": "urn:bnid:_:019757b9-fc89-7ee6-8f73-4ba56eb13075",
+  "proof": {
+    "type": "BbsBlsSignature2020",
+    "created": "2025-06-10T02:44:58Z",
+    "proofPurpose": "assertionMethod",
+    "proofValue": "kdoON+Ubu2GCBFbdTHTIre1/IdU/1MntnO006abQVYT+IWBBBpmTds0PkDAnU/Ddavu/mjbngltUcnnGCghyau4fA66L0FAVlh5dtG2fuX47Q3sjrr1UXLpf9H9i6c/0moUWj8CurmoEFr59NcKXZw==",
+    "verificationMethod": "did:web:trustvc.github.io:did:1#keys-1"
+  }
+}
