@@ -1,7 +1,7 @@
 import React from 'react';
 import { QRCodeSVG } from 'qrcode.react';
-import { Dialog, DialogClose, DialogContent, DialogHeader, DialogTitle } from '../ui/dialog';
-import { Button } from '../ui/button';
+import { Dialog, DialogClose, DialogContent, DialogHeader, DialogTitle } from '@/dialog';
+import { Button } from '@/button';
 import { SelectedStatus } from '../../types/types';
 
 export const QRCodeDialog = ({ status, onClose }: { status: SelectedStatus; onClose: () => void }) => (
@@ -13,7 +13,8 @@ export const QRCodeDialog = ({ status, onClose }: { status: SelectedStatus; onCl
       onEscapeKeyDown={(e) => {
         e.preventDefault();
       }}
-      className="text-center"
+      className="text-center rounded-xl sm:rounded-xl"
+      style={{ width: 'calc(100vw - (15px * 2))' }}
     >
       <DialogHeader>
         <DialogTitle>Verify {status?.documentTitle}</DialogTitle>

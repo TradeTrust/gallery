@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
-import { Dialog, DialogClose, DialogContent } from '../ui/dialog';
-import { Button } from '../ui/button';
+import { Dialog, DialogClose, DialogContent, DialogTitle } from '@/dialog';
+import { Button } from '@/button';
 
 export const ExpandPreview = ({
   image,
@@ -28,9 +28,9 @@ export const ExpandPreview = ({
         className="shadow-none border-none bg-white z-50 p-0 m-0 block w-full max-w-[640px] min-w-[308px] h-auto flex flex-col rounded-xl sm:rounded-xl text-neutral-600"
         style={{ width: 'calc(100vw - (15px * 2))' }}
       >
-        <div id="header" className="flex flex-none items-center gap-4 min-[596px]:flex-nowrap p-6 pt-4 pb-2">
-          <h3 className="text-[26px] font-normal leading-[1.25] font-ubuntu">Document Preview</h3>
-        </div>
+        <DialogTitle className="flex items-center gap-4 p-6 pt-4 pb-2">
+          <span className="text-[26px] font-normal leading-[1.25] font-ubuntu">Document Preview</span>
+        </DialogTitle>
         <div className="flex flex-col sm:flex-row items-center px-6 w-full gap-2">
           <div id="name" className="w-full sm:w-1/2">
             <p>{name}</p>

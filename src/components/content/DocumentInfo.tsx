@@ -1,6 +1,6 @@
 import React from 'react';
-import { Badge } from '../ui/badge';
-import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from '../ui/select';
+import { Badge } from '@/badge';
+import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from '@/select';
 import { DocumentInfoProps } from '../../types/types';
 
 export const DocumentInfo = ({

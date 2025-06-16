@@ -1,10 +1,5 @@
 import React, { JSX } from 'react';
-import {
-  NavigationMenu,
-  NavigationMenuItem,
-  NavigationMenuLink,
-  NavigationMenuList,
-} from '../../../components/ui/navigation-menu';
+import { NavigationMenu, NavigationMenuItem, NavigationMenuLink, NavigationMenuList } from '@/navigation-menu';
 import { Disclosure, DisclosureButton, DisclosurePanel } from '@headlessui/react';
 import { MenuIcon } from 'lucide-react';
 

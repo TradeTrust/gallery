@@ -1,6 +1,6 @@
-import React, { useState, JSX } from 'react';
-import { documents } from '../../../data/DocumentsData';
-import { Card } from '../../../components/ui/card';
+import React, { useState, JSX, useEffect } from 'react';
+import { Document, getDocuments } from '../../../data/DocumentsData';
+import { Card } from '@/card';
 import { QRCodeDialog } from '../../../components/content/QRCodeDialog';
 import { DocumentPreview } from '../../../components/content/DocumentPreview';
 import { DocumentInfo } from '../../../components/content/DocumentInfo';
@@ -8,11 +8,18 @@ import { DocumentStatus } from '../../../components/content/DocumentStatus';
 import { SelectedStatus } from '../../../types/types';
 
 export const ShowcaseContent = (): JSX.Element => {
-  const [selectedSchemas, setSelectedSchemas] = useState(
-    Object.fromEntries(documents.map((doc) => [doc.id, doc.schemas[0]])),
-  );
-
+  const [documents, setDocuments] = useState<Document[]>([]);
+  const [selectedSchemas, setSelectedSchemas] = useState<Record<number, string>>({});
   const [selectedStatus, setSelectedStatus] = useState<SelectedStatus>(null);
+
+  useEffect(() => {
+    const init = async () => {
+      const docs = await getDocuments();
+      setDocuments(docs);
+      setSelectedSchemas(Object.fromEntries(docs.map((doc) => [doc.id, doc.schemas[0]])));
+    };
+    init();
+  }, []);
 
   const handleSchemaChange = (id: number, newSchema: string) => {
     setSelectedSchemas((prev) => ({ ...prev, [id]: newSchema }));

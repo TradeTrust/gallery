@@ -7,7 +7,11 @@
     "moduleResolution": "Node",
     "esModuleInterop": true,
     "resolveJsonModule": true,
-    "skipLibCheck": true
+    "skipLibCheck": true,
+    "baseUrl": "src",
+    "paths": {
+      "@/*": ["components/ui/*"]
+    }
   },
   "include": ["src"],
   "exclude": ["node_modules"]

@@ -1,5 +1,5 @@
 import React from 'react';
-import { Card, CardContent } from '../ui/card';
+import { Card, CardContent } from '@/card';
 
 export const DisclaimerCard = () => (
   <Card className="z-20 flex flex-col max-w-screen-xl items-center w-full border-none">

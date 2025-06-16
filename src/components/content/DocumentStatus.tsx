@@ -1,8 +1,8 @@
 import React from 'react';
-import { Tabs, TabsList } from '../ui/tabs';
-import { Dialog, DialogTrigger } from '../ui/dialog';
+import { Tabs, TabsList } from '@/tabs';
+import { Dialog, DialogTrigger } from '@/dialog';
 import { ChevronRightIcon } from 'lucide-react';
-import { Separator } from '../ui/separator';
+import { Separator } from '@/separator';
 import { StatusProps } from '../../types/types';
 
 export const DocumentStatus = ({ id, title, statuses, selectedSchema, onStatusClick }: StatusProps) => (
