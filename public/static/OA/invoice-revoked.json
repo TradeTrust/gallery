@@ -1,0 +1,88 @@
+{
+  "version": "https://schema.openattestation.com/2.0/schema.json",
+  "data": {
+    "issuers": [
+      {
+        "id": "0195ff5b-3af6-4c7f-9ab1-72c4009b6be0:string:did:ethr:0x433097a1C1b8a3e9188d8C54eCC057B1D69f1638",
+        "name": "e13a711d-7d56-4158-b933-cc796fdcff48:string:DEMO STORE",
+        "revocation": {
+          "type": "6da4f5a9-38a5-48d6-a910-6d931574cb72:string:REVOCATION_STORE",
+          "location": "c9f9f7bc-1f5d-43b1-9338-35a10629a9fe:string:0x5596c0fC931cfA779B2C4e27D1F54b12DdaeCecd"
+        },
+        "identityProof": {
+          "type": "0d6940f4-a83e-4c71-876d-328096abc6b1:string:DID",
+          "key": "56192079-c42d-4c58-9e10-62f207c85b1d:string:did:ethr:0x433097a1C1b8a3e9188d8C54eCC057B1D69f1638#controller"
+        }
+      }
+    ],
+    "billFrom": {
+      "name": "7db2d4c3-1539-413c-b399-12675e2c5775:string:ABC Exports Pvt. Ltd.",
+      "streetAddress": "5a14b0c1-d696-4a84-8099-47bce3f429d3:string:Plot 123, Industrial Area",
+      "city": "1a3af41d-2913-41cf-856c-6a22058222a8:string:Metropolis",
+      "postalCode": "eaae4a12-ec1c-4974-97c4-911aba2db04c:string:123456",
+      "phoneNumber": "c7b295da-4e97-4c64-847b-18274c157ec6:string:+91-11-2222-3333"
+    },
+    "billTo": {
+      "company": {
+        "name": "abdabdf7-c865-4747-911b-86c54c90f344:string:XYZ Foods Ltd.",
+        "streetAddress": "c2e0bf0b-db3e-4620-bf38-429348945d2a:string:Suite 45, Business Bay",
+        "city": "c4375583-604b-4dd3-bfc2-ee736cd2cb20:string:Gotham",
+        "postalCode": "41aba553-b963-4a20-afc2-4ae7bbf4f227:string:987654",
+        "phoneNumber": "3310577f-7bee-4c33-93ca-21922ab41d21:string:+44-20-1111-2222"
+      },
+      "name": "eae1e704-114a-48cf-b1f8-2c0552bc52b9:string:John Doe",
+      "email": "dd971702-7ade-4e89-9c74-aa74e0ae8f5f:string:john.doe@xyzfoods.com"
+    },
+    "billableItems": [
+      {
+        "description": "ea349039-786e-4007-9a7f-84eb5e531b89:string:Sample Product A (10kg Packs)",
+        "quantity": "8d7176c2-dd26-4746-8a9f-55085a84ff35:string:50",
+        "unitPrice": "116b884c-8f9a-4ec3-9a58-cfb070741a0f:string:15.00",
+        "amount": "e07fb68a-fb49-491c-b409-79853a1492ca:string:750.00"
+      },
+      {
+        "description": "43126772-e3a0-42a9-a3da-58cab2a58768:string:Shipping Charges",
+        "quantity": "a71061b4-8e6a-4027-a72c-1077ad0f7a66:string:1",
+        "unitPrice": "0d25165a-2cef-4b7e-8ed8-f41f429b5677:string:100",
+        "amount": "321f2057-0514-4143-9cae-c55486fbcdb9:string:100"
+      }
+    ],
+    "$template": {
+      "type": "94c7f829-3b1d-483b-bd0c-21609413749a:string:EMBEDDED_RENDERER",
+      "name": "578124aa-20b9-44e0-b3be-6c3d477d6490:string:INVOICE",
+      "url": "030f54a3-d8d9-4684-a615-cee8a84f01c0:string:https://generic-templates.tradetrust.io"
+    },
+    "network": {
+      "chain": "894345d6-5014-47bb-b9fc-8f98c941988a:string:FREE",
+      "chainId": "2d6f89ff-0e3f-4ebb-82e1-e34085a28366:string:101010"
+    },
+    "id": "3355c7e0-b38f-431b-b074-df0990e1589b:string:INV-FAKE-0001",
+    "date": "32798702-868f-4857-a852-ae8a5bf1e2ca:string:2025-06-18",
+    "customerId": "8260edc6-9db5-448f-a148-d4f73755f42e:string:CUST-XYZ-0001",
+    "terms": "284dcafc-e5cb-49d9-b569-def582a568a4:string:Net 15 Days",
+    "subtotal": "5f277590-22fb-4960-8112-0533cc7c8bab:string:$850.00",
+    "tax": "1f68df77-c052-4565-b591-831dc86396e7:string:10",
+    "taxTotal": "8b90686f-41fb-4c94-b90f-5b1ab6564db7:string:85.00",
+    "total": "8b8c0f61-ab32-4d9b-be6a-3568b1904af8:string:935.00",
+    "links": {
+      "self": {
+        "href": "57b5b781-cbeb-4787-8198-4c2912c51534:string:https%3A%2F%2Factions.tradetrust.io%3Fq%3D%7B%22type%22%3A%22DOCUMENT%22%2C%22payload%22%3A%7B%22uri%22%3A%22https%3A%2F%2Fgallery.tradetrust.io%2Fstatic%2FOA%2Finvoice-revoked.json%22%2C%22redirect%22%3A%22https%3A%2F%2Fv5-token-registry.tradetrust.io%2F%22%2C%22chainId%22%3A%22101010%22%7D%7D"
+      }
+    }
+  },
+  "signature": {
+    "type": "SHA3MerkleProof",
+    "targetHash": "667df8e3f820194134247c8f6385beee070e42aa307633479f19eee048578f00",
+    "proof": [],
+    "merkleRoot": "667df8e3f820194134247c8f6385beee070e42aa307633479f19eee048578f00"
+  },
+  "proof": [
+    {
+      "type": "OpenAttestationSignature2018",
+      "created": "2025-06-18T09:08:58.961Z",
+      "proofPurpose": "assertionMethod",
+      "verificationMethod": "did:ethr:0x433097a1C1b8a3e9188d8C54eCC057B1D69f1638#controller",
+      "signature": "0xd34f7deec8bc053404fb42c54ac5b1d9212c6fec2d6c150a78297255647c5cde50a469d46587b5b8a1ad69698269a26b17f626fb5d27903bb8f58096bbecddc31b"
+    }
+  ]
+}
