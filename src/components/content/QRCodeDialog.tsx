@@ -24,7 +24,16 @@ export const QRCodeDialog = ({ status, onClose }: { status: SelectedStatus; onCl
         {status?.documentTitle} - {status?.label}
       </p>
       <div className="w-full h-48 flex items-center justify-center rounded">
-        <QRCodeSVG value={status?.url || ''} size={200} />
+        <QRCodeSVG
+          value={status?.url || ''}
+          size={200}
+          imageSettings={{
+            src: '/logo-qrcode.png',
+            height: 40,
+            width: 40,
+            excavate: true,
+          }}
+        />
       </div>
       <p className="mt-4 text-sm text-gray-600">
         Scan this QR code to verify this document on <strong>ref.tradetrust.io</strong>
