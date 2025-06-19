@@ -1,13 +1,10 @@
 module.exports = {
   content: [
     "./src/**/*.{html,js,ts,jsx,tsx}",
-    "app/**/*.{ts,tsx}",
-    "components/**/*.{ts,tsx}",
   ],
   theme: {
     extend: {
       colors: {
-        "accent-1": "var(--accent-1)",
         "app-primary": "var(--app-primary)",
         "doc-header": "var(--doc-header)",
         "interactive-componentoverlayenabledbgneutralhovered":

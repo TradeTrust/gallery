@@ -6,7 +6,12 @@
     "strict": true,
     "moduleResolution": "Node",
     "esModuleInterop": true,
-    "skipLibCheck": true
+    "resolveJsonModule": true,
+    "skipLibCheck": true,
+    "baseUrl": "src",
+    "paths": {
+      "@/*": ["components/ui/*"]
+    }
   },
   "include": ["src"],
   "exclude": ["node_modules"]
