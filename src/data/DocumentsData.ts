@@ -39,6 +39,20 @@ const loadDocuments = async () => {
     inv_expired: 'invoice-expired.json',
     whr_operative: 'warehouse-receipt-operative.json',
     whr_inoperative: 'warehouse-receipt-inoperative.json',
+    coo_default_oa: 'OA/certificate-of-origin-default.json',
+    coo_redacted_oa: 'OA/certificate-of-origin-redacted.json',
+    coo_revoked_oa: 'OA/certificate-of-origin-revoked.json',
+    coo_expired_oa: 'OA/certificate-of-origin-expired.json',
+    epn_operative_oa: 'OA/electronic-promissory-note-operative.json',
+    epn_inoperative_oa: 'OA/electronic-promissory-note-inoperative.json',
+    bol_operative_oa: 'OA/bill-of-lading-operative.json',
+    bol_inoperative_oa: 'OA/bill-of-lading-inoperative.json',
+    inv_default_oa: 'OA/invoice-default.json',
+    inv_redacted_oa: 'OA/invoice-redacted.json',
+    inv_revoked_oa: 'OA/invoice-revoked.json',
+    inv_expired_oa: 'OA/invoice-expired.json',
+    whr_operative_oa: 'OA/warehouse-receipt-operative.json',
+    whr_inoperative_oa: 'OA/warehouse-receipt-inoperative.json',
   };
 
   const entries = await Promise.all(
@@ -49,6 +63,16 @@ const loadDocuments = async () => {
   );
 
   return Object.fromEntries(entries);
+};
+
+const decodeOAString = (value: string) => {
+  const parts = value.split(':');
+  const encodedPart = parts.slice(2).join(':');
+  try {
+    return decodeURIComponent(encodedPart);
+  } catch {
+    return value;
+  }
 };
 
 export const getDocuments = async (): Promise<Document[]> => {
@@ -65,10 +89,34 @@ export const getDocuments = async (): Promise<Document[]> => {
       description: 'A document certifying the country in which a product was manufactured, grown, or processed.',
       schemas: ['W3C VC', 'OA (Legacy)'],
       statuses: [
-        { label: 'Default', url: { 'W3C VC': docs.coo_default.qrCode.uri, 'OA (Legacy)': '' } },
-        { label: 'Redacted', url: { 'W3C VC': docs.coo_redacted.qrCode.uri, 'OA (Legacy)': '' } },
-        { label: 'Revoked', url: { 'W3C VC': docs.coo_revoked.qrCode.uri, 'OA (Legacy)': '' } },
-        { label: 'Expired', url: { 'W3C VC': docs.coo_expired.qrCode.uri, 'OA (Legacy)': '' } },
+        {
+          label: 'Default',
+          url: {
+            'W3C VC': docs.coo_default.qrCode.uri,
+            'OA (Legacy)': '',
+          },
+        },
+        {
+          label: 'Redacted',
+          url: {
+            'W3C VC': docs.coo_redacted.qrCode.uri,
+            'OA (Legacy)': '',
+          },
+        },
+        {
+          label: 'Revoked',
+          url: {
+            'W3C VC': docs.coo_revoked.qrCode.uri,
+            'OA (Legacy)': '',
+          },
+        },
+        {
+          label: 'Expired',
+          url: {
+            'W3C VC': docs.coo_expired.qrCode.uri,
+            'OA (Legacy)': '',
+          },
+        },
       ],
     },
     {
@@ -82,8 +130,20 @@ export const getDocuments = async (): Promise<Document[]> => {
         'A digital equivalent of a paper-based promissory note, representing a legally binding agreement to repay a debt.',
       schemas: ['W3C VC', 'OA (Legacy)'],
       statuses: [
-        { label: 'Operative', url: { 'W3C VC': docs.epn_operative.qrCode.uri, 'OA (Legacy)': '' } },
-        { label: 'Inoperative', url: { 'W3C VC': docs.epn_inoperative.qrCode.uri, 'OA (Legacy)': '' } },
+        {
+          label: 'Operative',
+          url: {
+            'W3C VC': docs.epn_operative.qrCode.uri,
+            'OA (Legacy)': '',
+          },
+        },
+        {
+          label: 'Inoperative',
+          url: {
+            'W3C VC': docs.epn_inoperative.qrCode.uri,
+            'OA (Legacy)': '',
+          },
+        },
       ],
     },
     {
@@ -96,8 +156,20 @@ export const getDocuments = async (): Promise<Document[]> => {
       description: 'A digital record of a shipment, serving as a receipt, contract of carriage, and document of title.',
       schemas: ['W3C VC', 'OA (Legacy)'],
       statuses: [
-        { label: 'Operative', url: { 'W3C VC': docs.bol_operative.qrCode.uri, 'OA (Legacy)': '' } },
-        { label: 'Inoperative', url: { 'W3C VC': docs.bol_inoperative.qrCode.uri, 'OA (Legacy)': '' } },
+        {
+          label: 'Operative',
+          url: {
+            'W3C VC': docs.bol_operative.qrCode.uri,
+            'OA (Legacy)': '',
+          },
+        },
+        {
+          label: 'Inoperative',
+          url: {
+            'W3C VC': docs.bol_inoperative.qrCode.uri,
+            'OA (Legacy)': '',
+          },
+        },
       ],
     },
     {
@@ -111,10 +183,34 @@ export const getDocuments = async (): Promise<Document[]> => {
         'A commercial document issued by a seller to a buyer, detailing the products or services provided, their quantities and agreed prices, and the total amount due.',
       schemas: ['W3C VC', 'OA (Legacy)'],
       statuses: [
-        { label: 'Default', url: { 'W3C VC': docs.inv_default.qrCode.uri, 'OA (Legacy)': '' } },
-        { label: 'Redacted', url: { 'W3C VC': docs.inv_redacted.qrCode.uri, 'OA (Legacy)': '' } },
-        { label: 'Revoked', url: { 'W3C VC': docs.inv_revoked.qrCode.uri, 'OA (Legacy)': '' } },
-        { label: 'Expired', url: { 'W3C VC': docs.inv_expired.qrCode.uri, 'OA (Legacy)': '' } },
+        {
+          label: 'Default',
+          url: {
+            'W3C VC': docs.inv_default.qrCode.uri,
+            'OA (Legacy)': decodeOAString(docs.inv_default_oa.data.links.self.href),
+          },
+        },
+        {
+          label: 'Redacted',
+          url: {
+            'W3C VC': docs.inv_redacted.qrCode.uri,
+            'OA (Legacy)': decodeOAString(docs.inv_redacted_oa.data.links.self.href),
+          },
+        },
+        {
+          label: 'Revoked',
+          url: {
+            'W3C VC': docs.inv_revoked.qrCode.uri,
+            'OA (Legacy)': decodeOAString(docs.inv_revoked_oa.data.links.self.href),
+          },
+        },
+        {
+          label: 'Expired',
+          url: {
+            'W3C VC': docs.inv_expired.qrCode.uri,
+            'OA (Legacy)': decodeOAString(docs.inv_expired_oa.data.links.self.href),
+          },
+        },
       ],
     },
     {
@@ -127,8 +223,20 @@ export const getDocuments = async (): Promise<Document[]> => {
       description: 'A document issued by a warehouse operator acknowledging the receipt of goods for storage.',
       schemas: ['W3C VC', 'OA (Legacy)'],
       statuses: [
-        { label: 'Operative', url: { 'W3C VC': docs.whr_operative.qrCode.uri, 'OA (Legacy)': '' } },
-        { label: 'Inoperative', url: { 'W3C VC': docs.whr_inoperative.qrCode.uri, 'OA (Legacy)': '' } },
+        {
+          label: 'Operative',
+          url: {
+            'W3C VC': docs.whr_operative.qrCode.uri,
+            'OA (Legacy)': '',
+          },
+        },
+        {
+          label: 'Inoperative',
+          url: {
+            'W3C VC': docs.whr_inoperative.qrCode.uri,
+            'OA (Legacy)': '',
+          },
+        },
       ],
     },
   ];
