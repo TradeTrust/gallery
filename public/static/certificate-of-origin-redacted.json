@@ -7,32 +7,32 @@
     "https://trustvc.io/context/qrcode-context.json",
     "https://w3id.org/security/bbs/v1"
   ],
-  "id": "urn:bnid:_:01975381-0778-7664-bbb5-6b3dfc039c5b",
+  "id": "urn:bnid:_:01982c04-cf67-7224-950f-c7bc46cf4dd2",
   "type": "VerifiableCredential",
   "qrCode": {
-    "id": "urn:bnid:_:c14n1",
+    "id": "urn:bnid:_:c14n3",
     "type": "TrustVCQRCode",
-    "uri": "https://actions.tradetrust.io?q=%7B%22type%22%3A%22DOCUMENT%22%2C%22payload%22%3A%7B%22uri%22%3A%22https%3A%2F%2Fgallery.tradetrust.io%2Fstatic%2Fcertificate-of-origin-redacted.json%22%2C%22redirect%22%3A%22https%3A%2F%2Fv5-token-registry.tradetrust.io%2F%22%2C%22chainId%22%3A%22101010%22%7D%7D"
+    "uri": "https%3A%2F%2Factions.tradetrust.io%3Fq%3D%7B%22type%22%3A%22DOCUMENT%22%2C%22payload%22%3A%7B%22uri%22%3A%22https%3A%2F%2Fgallery.tradetrust.io%2Fstatic%2Fcertificate-of-origin-redacted.json%22%2C%22redirect%22%3A%22https%3A%2F%2Fref.tradetrust.io%2F%22%2C%22chainId%22%3A%22101010%22%7D%7D"
   },
   "renderMethod": [
     {
-      "@id": "urn:bnid:_:c14n4",
+      "@id": "urn:bnid:_:c14n0",
       "id": "https://generic-templates.tradetrust.io",
       "templateName": "CHAFTA_COO",
       "type": "EMBEDDED_RENDERER"
     }
   ],
   "credentialSubject": {
-    "id": "urn:bnid:_:c14n5",
+    "id": "urn:bnid:_:c14n4",
     "type": "Coo",
-    "exportCountryCode": "In",
+    "exportCountryCode": "IN",
     "exporterCityName": "Navi Mumbai",
     "exporterCountryCode": "IN",
     "exporterCountrySubDivisionName": "Maharashtra",
     "exporterId": "EXP-IN-00987",
     "exporterLine1": "12/F, Industrial Plaza",
     "exporterLine2": "Near MIDC, Vashi",
-    "exporterName": "Saffron Agro Exports Pvt. Ltd.",
+    "exporterName": "ABC Exports Pvt. Ltd.",
     "exporterPostcode": "400703",
     "supplyChainConsignmentId": "CONS-EX456789"
   },
@@ -40,10 +40,10 @@
   "issuer": "did:web:trustvc.github.io:did:1",
   "proof": {
     "type": "BbsBlsSignatureProof2020",
-    "created": "2025-06-09T07:04:14Z",
-    "nonce": "H8EFeOCLMJGEa88SAuSGHN772cyn8X3vCbl7IaQ3+ZelGr3x5rhTOQM9LWyNAIW88og=",
+    "created": "2025-07-21T08:06:09Z",
+    "nonce": "Demr+hOgSjI9wFb4V4K+3WoQdsvJd1DtDLDZmpEu8cW3kqumsdaOe6povM6fL9cVftE=",
     "proofPurpose": "assertionMethod",
-    "proofValue": "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",
+    "proofValue": "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",
     "verificationMethod": "did:web:trustvc.github.io:did:1#keys-1"
   }
 }

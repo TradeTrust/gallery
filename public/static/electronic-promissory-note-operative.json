@@ -8,7 +8,11 @@
     "https://w3id.org/security/bbs/v1"
   ],
   "renderMethod": [
-    { "type": "EMBEDDED_RENDERER", "templateName": "PROMISSORY_NOTE", "id": "https://generic-templates.tradetrust.io" }
+    {
+      "type": "EMBEDDED_RENDERER",
+      "templateName": "PROMISSORY_NOTE",
+      "id": "https://generic-templates.tradetrust.io"
+    }
   ],
   "credentialSubject": {
     "type": ["PromissoryNote"],
@@ -35,22 +39,22 @@
   "type": ["VerifiableCredential"],
   "qrCode": {
     "type": "TrustVCQRCode",
-    "uri": "https://actions.tradetrust.io?q=%7B%22type%22%3A%22DOCUMENT%22%2C%22payload%22%3A%7B%22uri%22%3A%22https%3A%2F%2Fgallery.tradetrust.io%2Fstatic%2Felectronic-promissory-note-operative.json%22%2C%22redirect%22%3A%22https%3A%2F%2Fv5-token-registry.tradetrust.io%2F%22%2C%22chainId%22%3A%22101010%22%7D%7D"
+    "uri": "https%3A%2F%2Factions.tradetrust.io%3Fq%3D%7B%22type%22%3A%22DOCUMENT%22%2C%22payload%22%3A%7B%22uri%22%3A%22https%3A%2F%2Fgallery.tradetrust.io%2Fstatic%2Felectronic-promissory-note-operative.json%22%2C%22redirect%22%3A%22https%3A%2F%2Fref.tradetrust.io%2F%22%2C%22chainId%22%3A%22101010%22%7D%7D"
   },
   "credentialStatus": {
     "type": "TransferableRecords",
     "tokenNetwork": { "chain": "FREE", "chainId": 101010 },
     "tokenRegistry": "0x7202363bBDb126036F7C3243Ebac310d9d145040",
-    "tokenId": "53e2d972147587a92b7fc79997bb55fd2363e53ae72cf3f6079fe5d973f7e68f"
+    "tokenId": "7c8f8316738125ee522c24b4a5dfe4e93d5e9281816c01442cb48aa682bb3c1d"
   },
   "issuer": "did:web:trustvc.github.io:did:1",
   "issuanceDate": "2025-06-19T02:41:46.742Z",
-  "id": "urn:bnid:_:01978610-54f8-777a-b67e-7b97371beb8a",
+  "id": "urn:bnid:_:01982cb6-ed95-711e-911c-5f495c3329eb",
   "proof": {
     "type": "BbsBlsSignature2020",
-    "created": "2025-06-19T02:41:46Z",
+    "created": "2025-07-21T11:20:42Z",
     "proofPurpose": "assertionMethod",
-    "proofValue": "jo7zHOf6T2OVG48rKzj4xBm1MFNS8uoFmtFIaups/EuLsUCM9bO7vuRHgR0PXkJEWEApqvoudOT1Tie14f2fvHy9DhEGdWGneNbINOLNDYUiIxGyvD4qeB+eLPN7D1gp/U2PgHpxBIBPHvZNXYkddQ==",
+    "proofValue": "pk3NROLGyXBed/K2Ihiyhu+OZkBvJ06wuROrQ7mdKJ0mDAAUHTW16gg7IBTbXUSaFJqE2ycnPrtf5ZvITOyyqq2CEw8AFhKo/MHBJQl2prFzdQKekr8jKed2OjaCN7CPdOdh2DbjRJpgenHnvU62Tw==",
     "verificationMethod": "did:web:trustvc.github.io:did:1#keys-1"
   }
 }

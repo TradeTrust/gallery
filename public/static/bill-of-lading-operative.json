@@ -21,8 +21,8 @@
     "shipperAddressStreet": "101 ORCHARD ROAD",
     "shipperAddressCountry": "Singapore",
     "toOrderOfText": "TO ORDER",
-    "consigneeName": "Pacific Natural Foods Inc.",
-    "notifyPartyName": "Amanda Green – Import Manager, Pacific Natural Foods",
+    "consigneeName": "ABC Natural Foods Inc.",
+    "notifyPartyName": "Amanda Green – Import Manager, ABC Natural Foods",
     "packages": [
       {
         "packagesDescription": "Organic Cashew Kernels (25kg bags)",
@@ -76,22 +76,22 @@
   "type": ["VerifiableCredential"],
   "qrCode": {
     "type": "TrustVCQRCode",
-    "uri": "https://actions.tradetrust.io?q=%7B%22type%22%3A%22DOCUMENT%22%2C%22payload%22%3A%7B%22uri%22%3A%22https%3A%2F%2Fgallery.tradetrust.io%2Fstatic%2Fbill-of-lading-operative.json%22%2C%22redirect%22%3A%22https%3A%2F%2Fv5-token-registry.tradetrust.io%2F%22%2C%22chainId%22%3A%22101010%22%7D%7D"
+    "uri": "https%3A%2F%2Factions.tradetrust.io%3Fq%3D%7B%22type%22%3A%22DOCUMENT%22%2C%22payload%22%3A%7B%22uri%22%3A%22https%3A%2F%2Fgallery.tradetrust.io%2Fstatic%2Fbill-of-lading-operative.json%22%2C%22redirect%22%3A%22https%3A%2F%2Fref.tradetrust.io%2F%22%2C%22chainId%22%3A%22101010%22%7D%7D"
   },
   "credentialStatus": {
     "type": "TransferableRecords",
     "tokenNetwork": { "chain": "FREE", "chainId": 101010 },
     "tokenRegistry": "0x7202363bBDb126036F7C3243Ebac310d9d145040",
-    "tokenId": "35e1a116414abe88d8b2bb830e79fd58a9df36d8b36479a76dc7957b5c0ba228"
+    "tokenId": "12cffc7f0e5d4e9c0b0e3d0661646793afdb88b2849e6e3cd4f2a366e054d4b1"
   },
   "issuer": "did:web:trustvc.github.io:did:1",
   "issuanceDate": "2025-06-05T11:29:32.860Z",
-  "id": "urn:bnid:_:0197880b-8062-7883-9660-cc3d1365bbaf",
+  "id": "urn:bnid:_:01982c9a-d69e-7444-91ae-bf28abca9e9f",
   "proof": {
     "type": "BbsBlsSignature2020",
-    "created": "2025-06-19T11:55:44Z",
+    "created": "2025-07-21T10:50:01Z",
     "proofPurpose": "assertionMethod",
-    "proofValue": "ou0flN9++MQIntIfXxQkC5qWyzUqkTk1mLO+zsOerRYl0ehig22DeXHz2IPiYcTfOalccGJPTCqb7CI/owxG8sez/I1opBusPOS+Ce9182coxAm1FDTOpoT9tYEjWSVanOcpqXDOqIlea/7pddc6IA==",
+    "proofValue": "gHNild2zI6B+lU7vyakEBosPpma2GsbKeKZI9i4N/RWdwspXCFqIe1PZcy6lllIKMj8ukJqD4RR4zQKDxRNlCbXNUvRY7Y0ZnFNG9D6Y4FRLscul/GEYiweV7ZFflOYOpfxi2/ERwemUzVg6wVypeg==",
     "verificationMethod": "did:web:trustvc.github.io:did:1#keys-1"
   }
 }
