@@ -54,22 +54,22 @@
   "type": ["VerifiableCredential"],
   "qrCode": {
     "type": "TrustVCQRCode",
-    "uri": "https://actions.tradetrust.io?q=%7B%22type%22%3A%22DOCUMENT%22%2C%22payload%22%3A%7B%22uri%22%3A%22https%3A%2F%2Fgallery.tradetrust.io%2Fstatic%2Fwarehouse-receipt-inoperative.json%22%2C%22redirect%22%3A%22https%3A%2F%2Fv5-token-registry.tradetrust.io%2F%22%2C%22chainId%22%3A%22101010%22%7D%7D"
+    "uri": "https%3A%2F%2Factions.tradetrust.io%3Fq%3D%7B%22type%22%3A%22DOCUMENT%22%2C%22payload%22%3A%7B%22uri%22%3A%22https%3A%2F%2Fgallery.tradetrust.io%2Fstatic%2Fwarehouse-receipt-inoperative.json%22%2C%22redirect%22%3A%22https%3A%2F%2Fref.tradetrust.io%2F%22%2C%22chainId%22%3A%22101010%22%7D%7D"
   },
   "credentialStatus": {
     "type": "TransferableRecords",
     "tokenNetwork": { "chain": "FREE", "chainId": 101010 },
     "tokenRegistry": "0x7202363bBDb126036F7C3243Ebac310d9d145040",
-    "tokenId": "b4d16c615a0029dd20b8ea37608208b2b5e53f8976fa3cd85c866314430dc729"
+    "tokenId": "72a9fb06332852a9db76c3d1e8a6db27c408144dda3c794a744b022caaa3bd0b"
   },
   "issuer": "did:web:trustvc.github.io:did:1",
   "issuanceDate": "2025-06-06T05:23:56.994Z",
-  "id": "urn:bnid:_:01978811-4614-7111-af3f-6c7ba42a6bf1",
+  "id": "urn:bnid:_:01982c9d-f249-799f-a50c-45d625671c86",
   "proof": {
     "type": "BbsBlsSignature2020",
-    "created": "2025-06-19T12:02:02Z",
+    "created": "2025-07-21T10:53:25Z",
     "proofPurpose": "assertionMethod",
-    "proofValue": "phak+GjKw4HHddPzBYJgEe64n0e5rt+44K1UKb7glSZt8BIQz1dSTV5niwt7zjZZb0s2LTYNvmA+JfeM9r5vbLRN1BzGIsaz3gFuiyUTIwViEtS9jYxg5OrkK1/9GKDRBQPMughIHk4oi9ndWXS96A==",
+    "proofValue": "lAkTqa/2eqa9V3OIJyruteCgs92fwKDS/+bZ209APqX97THqeGod0PSbTf0zRa6bGULX2BPFPwqNfSfWMSVmj5uMhj5LHjDkcRMcJrHinV4XBfot3cYi8hRefWBqUIoQdib72HSIZmKUOsuclJUD0Q==",
     "verificationMethod": "did:web:trustvc.github.io:did:1#keys-1"
   }
 }

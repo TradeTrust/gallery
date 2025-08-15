@@ -7,18 +7,22 @@
     "https://w3id.org/security/bbs/v1"
   ],
   "renderMethod": [
-    { "type": "EMBEDDED_RENDERER", "templateName": "INVOICE", "id": "https://generic-templates.tradetrust.io" }
+    {
+      "type": "EMBEDDED_RENDERER",
+      "templateName": "INVOICE",
+      "id": "https://generic-templates.tradetrust.io"
+    }
   ],
   "credentialSubject": {
     "type": ["Invoice"],
-    "billFromName": "Saffron Agro Exports Pvt. Ltd.",
+    "billFromName": "ABC Exports Pvt. Ltd.",
     "billFromStreetAddress": "12/F, Industrial Plaza, Near MIDC",
     "billFromCity": "Navi Mumbai",
     "billFromPostalCode": "400703",
     "billFromPhoneNumber": "+91-22-4455-9988",
     "billToName": "David Thomson",
-    "billToEmail": "david.thomson@goldenharvest.co.uk",
-    "billToCompanyName": "Golden Harvest Foods Ltd.",
+    "billToEmail": "david.thomson@example.co.uk",
+    "billToCompanyName": "XYZ Foods Ltd.",
     "billToCompanyStreetAddress": "Unit 17, Royal Wharf, Docklands Industrial Area",
     "billToCompanyCity": "London",
     "billToCompanyPostalCode": "E16 2AA",
@@ -50,16 +54,16 @@
   "type": ["VerifiableCredential"],
   "qrCode": {
     "type": "TrustVCQRCode",
-    "uri": "https://actions.tradetrust.io?q=%7B%22type%22%3A%22DOCUMENT%22%2C%22payload%22%3A%7B%22uri%22%3A%22https%3A%2F%2Fgallery.tradetrust.io%2Fstatic%2Finvoice-default.json%22%2C%22redirect%22%3A%22https%3A%2F%2Fv5-token-registry.tradetrust.io%2F%22%2C%22chainId%22%3A%22101010%22%7D%7D"
+    "uri": "https%3A%2F%2Factions.tradetrust.io%3Fq%3D%7B%22type%22%3A%22DOCUMENT%22%2C%22payload%22%3A%7B%22uri%22%3A%22https%3A%2F%2Fgallery.tradetrust.io%2Fstatic%2Finvoice-default.json%22%2C%22redirect%22%3A%22https%3A%2F%2Fref.tradetrust.io%2F%22%2C%22chainId%22%3A%22101010%22%7D%7D"
   },
   "issuer": "did:web:trustvc.github.io:did:1",
   "issuanceDate": "2025-06-09T09:36:15.971Z",
-  "id": "urn:bnid:_:0197540c-3664-7dd6-b628-5584f9003ba4",
+  "id": "urn:bnid:_:01982bbd-d627-7004-893f-ed79461a2d9c",
   "proof": {
     "type": "BbsBlsSignature2020",
-    "created": "2025-06-09T09:36:15Z",
+    "created": "2025-07-21T06:48:38Z",
     "proofPurpose": "assertionMethod",
-    "proofValue": "uCa8CfHyQl482zrZK8kWt0YZTybQRxT+AI8ysKFPqixYhDTPBrEaN2ZFDWjYbBkHKYyJzQfSYaJDfbezSw55iKqw3GIyMKB9jRee1oxxp6Y9a8UZFPwnP2dtVkOBsjibgbyVUWblXOPS8FcYWDUbaA==",
+    "proofValue": "tW6FIXPeDQuWH9qv+DZoFnJEyigCpUzk5fC3OrMkzlWF+WBTwOB9EwRLQj0RQzB2bJrSY6xRrii9DMS+RM4rkmDkOLt3wnnqKkal1DZftGwcVrGT7LO3zC81cI3xJvsYswAuXIVKP7mKdFvZQ1Q95A==",
     "verificationMethod": "did:web:trustvc.github.io:did:1#keys-1"
   }
 }

@@ -7,23 +7,23 @@
     "https://trustvc.io/context/qrcode-context.json",
     "https://w3id.org/security/bbs/v1"
   ],
-  "id": "urn:bnid:_:0197546d-dc96-788e-982a-23834d7ebed3",
+  "id": "urn:bnid:_:01982bda-d8b1-7446-a93f-0b46228cdb2f",
   "type": "VerifiableCredential",
   "qrCode": {
     "id": "urn:bnid:_:c14n4",
     "type": "TrustVCQRCode",
-    "uri": "https://actions.tradetrust.io?q=%7B%22type%22%3A%22DOCUMENT%22%2C%22payload%22%3A%7B%22uri%22%3A%22https%3A%2F%2Fgallery.tradetrust.io%2Fstatic%2Finvoice-redacted.json%22%2C%22redirect%22%3A%22https%3A%2F%2Fv5-token-registry.tradetrust.io%2F%22%2C%22chainId%22%3A%22101010%22%7D%7D"
+    "uri": "https%3A%2F%2Factions.tradetrust.io%3Fq%3D%7B%22type%22%3A%22DOCUMENT%22%2C%22payload%22%3A%7B%22uri%22%3A%22https%3A%2F%2Fgallery.tradetrust.io%2Fstatic%2Finvoice-redacted.json%22%2C%22redirect%22%3A%22https%3A%2F%2Fref.tradetrust.io%2F%22%2C%22chainId%22%3A%22101010%22%7D%7D"
   },
   "renderMethod": [
     {
-      "@id": "urn:bnid:_:c14n2",
+      "@id": "urn:bnid:_:c14n3",
       "id": "https://generic-templates.tradetrust.io",
       "templateName": "INVOICE",
       "type": "EMBEDDED_RENDERER"
     }
   ],
   "credentialSubject": {
-    "id": "urn:bnid:_:c14n3",
+    "id": "urn:bnid:_:c14n1",
     "type": "Invoice",
     "billToCompanyCity": "London",
     "billToCompanyPhoneNumber": "+44-20-8899-4455",
@@ -34,10 +34,10 @@
   "issuer": "did:web:trustvc.github.io:did:1",
   "proof": {
     "type": "BbsBlsSignatureProof2020",
-    "created": "2025-06-09T11:22:55Z",
-    "nonce": "4w4qU1mTdYnD3bdTpFut6hFv/qGJlfLONzlaujMNzyYkeoCXHHp30uX6JOGp7/suQjw=",
+    "created": "2025-07-21T07:20:19Z",
+    "nonce": "4G4xJDETmORx8HRTJrIb0N6V+TjKOzh0oD0bE+JqXwwV2BNYKHnf53LZk3PXeVSdLqk=",
     "proofPurpose": "assertionMethod",
-    "proofValue": "AC9gAOg8A/+HYWZ8O6Gi/eJxiAmHLn5manLi0gy76Dbz+ijYzPoy525sL/7aMJsSsH/uYItrd5Ghk8QWx4yyZ8sMSEGtc4TPY341ciqV0U4+qWUmbiygJ8bKf7R0fH4i435hjevumUuP+CMSihuhS5RnBg1HRRYtG7/nNiJ7+EEonD3+GD2J8rPX2ofozceZ2UATeC6uNw8AAAB0hc9bdA09UMJ9NWn/I0BoI5sDGXuw5L2Mz1+Vpojn2nvtLxcJDW7FaFkKiCk2v3xPAAAAAi4ilNvzfn2Ce1mfWT1yWh4votM3xhdFZf3vyy/K3BqLYjoBMY8jCEEwQ1QnTUaQbe0zpypmuO+vaCox9z4pFFKhlbirPdbTz5E5OACTNWh12L8CibyGGgEovk8pFWVxQcr/VGRVspwPxDrXu5WPZssAAAAdGNngc/PqbyfGdENNnX1xK/Z/AtCtsHTqKWBbXMDcSvQPxasYAtoujL13aZJ8pwdsirnGYFrr6DSQZ5zSXcHgGDHc43GsNA7xhWYXogxhVtCwu7r4ewcx785FydJ/uDubC6hk+cf4ncm9fsNMUoO571OWjj6/+tCC2sBsI7iv+6UtDKmHI0nT3qnX1Yc+Xk6IhmuSSdHb0+b61VvU4K/DgWecshjbb/hV/DjXlASTRF5XOLWckiGxpSU9nn91PHm5YUrjuDRUCQ/ctO6KWj7IpSt3yeLKENLMhyOeu1J2qrkRa5e/A6iUFic77t48mYzEm0hLlDjT+orInPgWGAoBaUAZf065orawBkP823Ef0v5kyzi4Hz93yj9jxWaRDvvfRnPOfo3nCb2v+DB3OdwQSsv440WawLTL7gt9VM5r6/UgaxcXrG7ADq1/iGPobsSKE/GM5LU7ikKDPzG5T7MhvTZ3SpP4tIfnCxW6eqqRr/itR2eFY8wBui1saT0+Dp5cG1HK2Op1JAnsJfl3c7ObG8oRhfuc9Gsb5O8/So53oRFmJAlYVJqXs7NV0tBTG5cntjL/QLCfd8FhlckLc14jKlpSAKEQR/w697jkuJrg4I+cA4N2bFFqOogBi0L0caT6WU0oHDiP39USALaveLAU527BU4kD864klfDQpIlxPP4mi3FCvnErRtjdZY3ozhmyF6qxRwb8zbXsHjBd/GB5gDvz/866p+S9AC4SuBaWp4lRq00Uq/QmafuB70vuP6omGmMMi7D7qUdcPLtvw0CYp/g8kk5QQcracjWQA0AjA0dRKvxBRaibxZjpg01W52LapM2DnaN7JoCeP3FWLSV5nWmgHpDffsKJshESDPxF/5w428G5CuNd+KvDfHxmhPEWPCWbAf4I7mvzeZJbyhOjTeddoyjejZWOS56c5UVdY4NxTOQ7vzG1mMpSMoRXnlvL7cRq0PLGk6kbSxOHsEvy7RY0Gpnixq3+UmhYa0rxwwe44BbBONqiBWWR6FuT7ArqM0KFCk5ozDzdDsnV6hZq/HsuriiIvfsMeSNJXjDdF6xPYvCk5mLReNeKFeuYbNvKhGbHGy3jDhxZXxGbKNSQRQTFh2JSku+FSgkD0KoLvH9UXn/N2HPrSB9Y01hs+veeDNavNlX3rWUCNvZ5LZyNdHLCLZEZP83Eyl92oHlekZQAa9x2ngOEdGHygyJ2BE7nluTaiMcsoBYv8XcezzwLXQ==",
+    "proofValue": "AC98AAHQQ/+KXAdNFfWT3TvCRnOyiUfRtE4L5toCro9RoaNrg7JQwvqAB272Dhs7jN/v6Ib0ZyyrfJKcXjuOrWuEjXYPxmW0iwSlBIue2elk4wg0OlAD4KHwSSJS4CmcQk6SFkQEGuqmRAE6M0QZLutFlEnFz+VjM1nFpcEgcOCv046QpzBXubUlalUH+8xBHf+9HZ5kQksAAAB0hXPZ/+/ohUwKB5dLte7pWwANB6x+urre+fFHp5EJKZkQy+SExtqMZ4SrJ88852cqAAAAAnHy2uLS6BU+wT0LANsiwt+wABH8a9k3d59gmA1pEwLYaDOjBoYBq2HbeiQpIUwBZ3AIUzEfHyP2ZNHaG9IIjAqjJXCe+QIZYCQxSzfxSQ5uhWAcgZ2vPcArdtXXTptMBuMPcQ3nQxetNRnmnbgUDEoAAAAdWaKS9ula6SpeyvDjMXXWXYd4Eccb32PQXzLo0+vv5tsE+MLYc0JCup3uWPTCBVleDiD016hfdpcrgIoGofzCHkdRxOoZhahEp+shMrXhQxuZD8aL3rTDr68f/Cj5qfsEMxvH6PPCFBXyeqK0AF/77b+DU4FxD9+xau9NSC7gOIs70JWsAgyhlRNk/LvEpVNOgtMloOnrtPy3nle9zIHHnmvNkFGApWMVnetLeS1HIMXjPP3AbHWBu8Z69NkwZ3z1WgKnYgeCmQfFBMy/1Eft7kx6WCiJs3AKcoyvlRnAT8QUNdXydGPmOaQz+FEeVjfm+VUmDUOTSIAx6yYj9Jpgo1uLf3SMHoOZkWNryJ/T3HZ2snPIYtlWtnUexQZFQRncSY3QidacZcS7gAzsQRcfDkLfH2hmdXnwHSviBNcyA1QCUMj5rrDglswUtFjd5Gn8aEUKeJn/+C0LqTSlK1UiEkMlY2R+e53p7y04bd6TQk/G8JJsPFfH5FKgfUSl5ZTPQVfEGKSbWzphEDUjlkboQVtP3mNQw29WPjMq395Clj9nMl8/7yqgpbjDfUEuRH//hNX33ZvLJ4tyzVnrBsicRGN5ArFOq8rW+QBE9uWu8vnn2Qj+ltUeoIlSS2h7lvuqDIuZZtHgmXrVaDHg1jeeVSp3i+SB/9FB7tHyZ1eDFOkADgsrFVPVLH31H551OtFtrCNvUEbJ+47q3yiYPswCYi/tcl+DdGg5APdx7g8BcMIgRcg9eYdx2/wb+7E5tq8zDd2VvvnzHD8cpKiJ8sGCFqtKkC277LQsgxTIbUziOhw3XO/JcWn561c9l4/hMB9+0JNxnO+pTPIy5NBlo+Zi1UjbPLWNXH2MDr6elGyj4le1N1bub2OAlxCz3sLr5IXoWcll1t8i70vx8buszmxr+EYC60C/g5Y5Uu2gx5G8wXE3Osdz/Ein+HMyMjXp4rJVW+df/2k7yrNHh4KypuaYWgw9opVCedr7SJi8Y/CBYBJmfn9AuV79VBeLX7cTsym7N9DuZmsvF+pz3vBUaY/hny6BUbOB7Tt0XPYUqK5OkNtUJ1urafdPFkMMXCkkm9pyW3uCHgDyKOi+vlmsFFxgPBTck8KPBDXpnGYQuqPII7VcdqKYSPXmNbzeFfhVsodQchldkBP4D+1gZ/kpNzqjH0C3sDhDq9z23OpZyIkydTQ1pdVaENPxP5MhOsD6ko9sAtYRCJ7jFte/MQtG7RfVsg==",
     "verificationMethod": "did:web:trustvc.github.io:did:1#keys-1"
   }
 }
