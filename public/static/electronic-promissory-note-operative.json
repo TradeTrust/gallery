@@ -45,16 +45,16 @@
     "type": "TransferableRecords",
     "tokenNetwork": { "chain": "FREE", "chainId": 101010 },
     "tokenRegistry": "0x7202363bBDb126036F7C3243Ebac310d9d145040",
-    "tokenId": "7c8f8316738125ee522c24b4a5dfe4e93d5e9281816c01442cb48aa682bb3c1d"
+    "tokenId": "3c6cad1819284c724fa07b729e4a613e2456ddcecc3c5cf6a08cbf868dca608d"
   },
   "issuer": "did:web:trustvc.github.io:did:1",
   "issuanceDate": "2025-06-19T02:41:46.742Z",
-  "id": "urn:bnid:_:01982cb6-ed95-711e-911c-5f495c3329eb",
+  "id": "urn:bnid:_:0198ad44-3be2-7223-9793-0f7a1f716994",
   "proof": {
     "type": "BbsBlsSignature2020",
-    "created": "2025-07-21T11:20:42Z",
+    "created": "2025-08-15T10:26:26Z",
     "proofPurpose": "assertionMethod",
-    "proofValue": "pk3NROLGyXBed/K2Ihiyhu+OZkBvJ06wuROrQ7mdKJ0mDAAUHTW16gg7IBTbXUSaFJqE2ycnPrtf5ZvITOyyqq2CEw8AFhKo/MHBJQl2prFzdQKekr8jKed2OjaCN7CPdOdh2DbjRJpgenHnvU62Tw==",
+    "proofValue": "oWln1T3qv7ZBGh2PJHm8lgeoq3EIPTIb7GS/NBsG3MseqFT8bKIrk4hnKo3nRqmjM1CIPeNdKb48krbpHaOyGWn7at9y3e9LGFnnEzo2HzIDo7RuOTAFt4dMixSr1RJs5jSYic5WhtAxX1FwbLqYYg==",
     "verificationMethod": "did:web:trustvc.github.io:did:1#keys-1"
   }
 }
