@@ -92,28 +92,28 @@ export const getDocuments = async (): Promise<Document[]> => {
         {
           label: 'Default',
           url: {
-            'W3C VC': docs.coo_default.qrCode.uri,
+            'W3C VC': decodeURIComponent(docs.coo_default.qrCode.uri),
             'OA (Legacy)': decodeOAString(docs.coo_default_oa.data.links.self.href),
           },
         },
         {
           label: 'Redacted',
           url: {
-            'W3C VC': docs.coo_redacted.qrCode.uri,
+            'W3C VC': decodeURIComponent(docs.coo_redacted.qrCode.uri),
             'OA (Legacy)': decodeOAString(docs.coo_redacted_oa.data.links.self.href),
           },
         },
         {
           label: 'Revoked',
           url: {
-            'W3C VC': docs.coo_revoked.qrCode.uri,
+            'W3C VC': decodeURIComponent(docs.coo_revoked.qrCode.uri),
             'OA (Legacy)': decodeOAString(docs.coo_revoked_oa.data.links.self.href),
           },
         },
         {
           label: 'Expired',
           url: {
-            'W3C VC': docs.coo_expired.qrCode.uri,
+            'W3C VC': decodeURIComponent(docs.coo_expired.qrCode.uri),
             'OA (Legacy)': decodeOAString(docs.coo_expired_oa.data.links.self.href),
           },
         },
@@ -133,14 +133,14 @@ export const getDocuments = async (): Promise<Document[]> => {
         {
           label: 'Operative',
           url: {
-            'W3C VC': docs.epn_operative.qrCode.uri,
+            'W3C VC': decodeURIComponent(docs.epn_operative.qrCode.uri),
             'OA (Legacy)': decodeOAString(docs.epn_operative_oa.data.links.self.href),
           },
         },
         {
           label: 'Inoperative',
           url: {
-            'W3C VC': docs.epn_inoperative.qrCode.uri,
+            'W3C VC': decodeURIComponent(docs.epn_inoperative.qrCode.uri),
             'OA (Legacy)': decodeOAString(docs.epn_inoperative_oa.data.links.self.href),
           },
         },
@@ -159,14 +159,14 @@ export const getDocuments = async (): Promise<Document[]> => {
         {
           label: 'Operative',
           url: {
-            'W3C VC': docs.bol_operative.qrCode.uri,
+            'W3C VC': decodeURIComponent(docs.bol_operative.qrCode.uri),
             'OA (Legacy)': decodeOAString(docs.bol_operative_oa.data.links.self.href),
           },
         },
         {
           label: 'Inoperative',
           url: {
-            'W3C VC': docs.bol_inoperative.qrCode.uri,
+            'W3C VC': decodeURIComponent(docs.bol_inoperative.qrCode.uri),
             'OA (Legacy)': decodeOAString(docs.bol_inoperative_oa.data.links.self.href),
           },
         },
@@ -186,28 +186,28 @@ export const getDocuments = async (): Promise<Document[]> => {
         {
           label: 'Default',
           url: {
-            'W3C VC': docs.inv_default.qrCode.uri,
+            'W3C VC': decodeURIComponent(docs.inv_default.qrCode.uri),
             'OA (Legacy)': decodeOAString(docs.inv_default_oa.data.links.self.href),
           },
         },
         {
           label: 'Redacted',
           url: {
-            'W3C VC': docs.inv_redacted.qrCode.uri,
+            'W3C VC': decodeURIComponent(docs.inv_redacted.qrCode.uri),
             'OA (Legacy)': decodeOAString(docs.inv_redacted_oa.data.links.self.href),
           },
         },
         {
           label: 'Revoked',
           url: {
-            'W3C VC': docs.inv_revoked.qrCode.uri,
+            'W3C VC': decodeURIComponent(docs.inv_revoked.qrCode.uri),
             'OA (Legacy)': decodeOAString(docs.inv_revoked_oa.data.links.self.href),
           },
         },
         {
           label: 'Expired',
           url: {
-            'W3C VC': docs.inv_expired.qrCode.uri,
+            'W3C VC': decodeURIComponent(docs.inv_expired.qrCode.uri),
             'OA (Legacy)': decodeOAString(docs.inv_expired_oa.data.links.self.href),
           },
         },
@@ -226,14 +226,14 @@ export const getDocuments = async (): Promise<Document[]> => {
         {
           label: 'Operative',
           url: {
-            'W3C VC': docs.whr_operative.qrCode.uri,
+            'W3C VC': decodeURIComponent(docs.whr_operative.qrCode.uri),
             'OA (Legacy)': decodeOAString(docs.whr_operative_oa.data.links.self.href),
           },
         },
         {
           label: 'Inoperative',
           url: {
-            'W3C VC': docs.whr_inoperative.qrCode.uri,
+            'W3C VC': decodeURIComponent(docs.whr_inoperative.qrCode.uri),
             'OA (Legacy)': decodeOAString(docs.whr_inoperative_oa.data.links.self.href),
           },
         },
