@@ -5,8 +5,8 @@ import { MenuIcon } from 'lucide-react';
 
 const navItems = [
   { label: 'TradeTrust Website', href: 'https://www.tradetrust.io/' },
-  { label: 'Verifier', href: 'https://v5-token-registry.tradetrust.io/' },
-  { label: 'Creator', href: 'https://v5-token-registry.tradetrust.io/creator' },
+  { label: 'Verifier', href: 'https://ref.tradetrust.io/' },
+  { label: 'Creator', href: 'https://ref.tradetrust.io/creator' },
 ];
 
 export const NavBar = (): JSX.Element => {
