@@ -64,16 +64,16 @@
   "type": ["VerifiableCredential"],
   "qrCode": {
     "type": "TrustVCQRCode",
-    "uri": "https%3A%2F%2Factions.tradetrust.io%3Fq%3D%7B%22type%22%3A%22DOCUMENT%22%2C%22payload%22%3A%7B%22uri%22%3A%22https%3A%2F%2Fgallery.tradetrust.io%2Fstatic%2Finvoice-revoked.json%22%2C%22redirect%22%3A%22https%3A%2F%2Fref.tradetrust.io%2F%22%2C%22chainId%22%3A%22101010%22%7D%7D"
+    "uri": "https://actions.tradetrust.io?q=%7B%22type%22%3A%22DOCUMENT%22%2C%22payload%22%3A%7B%22uri%22%3A%22https%3A%2F%2Fgallery.tradetrust.io%2Fstatic%2Finvoice-revoked.json%22%2C%22redirect%22%3A%22https%3A%2F%2Fref.tradetrust.io%2F%22%2C%22chainId%22%3A%22101010%22%7D%7D"
   },
   "issuer": "did:web:trustvc.github.io:did:1",
   "issuanceDate": "2025-06-09T09:36:15.971Z",
-  "id": "urn:bnid:_:01988941-0a5e-7771-a35d-76b59d6071e5",
+  "id": "urn:bnid:_:0198cc98-e733-7889-a56a-6586989b658e",
   "proof": {
     "type": "BbsBlsSignature2020",
-    "created": "2025-08-08T10:36:37Z",
+    "created": "2025-08-21T12:27:10Z",
     "proofPurpose": "assertionMethod",
-    "proofValue": "rOt6nNG44UmvRVkQW7NUFXrCkbzq7Efv8CV9qKNtyD59aIvPaWo5d2B8OYDc9anvYNoY9fP3lsPxGDcdiJrdmJEgVQcWKhXymGfDYR3gHbhFbC5gwC11SueVWqh37WY/W3qy0X6zQPux1iWtVQ10rQ==",
-    "verificationMethod": "did:web:trustvc.github.io:did:1#keys-1"
+    "proofValue": "t6MiyaBT0FkPkM2/vP8NdIvocdjx+09fYMFtIJxc2+xKzA0d8P7srdEaAu1xpYHUclQLD8rTJuP6ihzlME4rh1mbz/6PepuxJy7uSbc+gxBaa7IPiDOkLYL+OjOQdh/JzEPUpryTHlswSDz1qLmDug==",
+    "verificationMethod": "did:web:trustvc.github.io:did:1#keys-2"
   }
 }

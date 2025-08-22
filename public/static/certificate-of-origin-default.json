@@ -8,7 +8,11 @@
     "https://w3id.org/security/bbs/v1"
   ],
   "renderMethod": [
-    { "type": "EMBEDDED_RENDERER", "templateName": "CHAFTA_COO", "id": "https://generic-templates.tradetrust.io" }
+    {
+      "type": "EMBEDDED_RENDERER",
+      "templateName": "CHAFTA_COO",
+      "id": "https://generic-templates.tradetrust.io"
+    }
   ],
   "credentialSubject": {
     "type": ["Coo"],
@@ -81,16 +85,16 @@
   "type": ["VerifiableCredential"],
   "qrCode": {
     "type": "TrustVCQRCode",
-    "uri": "https%3A%2F%2Factions.tradetrust.io%3Fq%3D%7B%22type%22%3A%22DOCUMENT%22%2C%22payload%22%3A%7B%22uri%22%3A%22https%3A%2F%2Fgallery.tradetrust.io%2Fstatic%2Fcertificate-of-origin-default.json%22%2C%22redirect%22%3A%22https%3A%2F%2Fref.tradetrust.io%2F%22%2C%22chainId%22%3A%22101010%22%7D%7D"
+    "uri": "https://actions.tradetrust.io?q=%7B%22type%22%3A%22DOCUMENT%22%2C%22payload%22%3A%7B%22uri%22%3A%22https%3A%2F%2Fgallery.tradetrust.io%2Fstatic%2Fcertificate-of-origin-default.json%22%2C%22redirect%22%3A%22https%3A%2F%2Fref.tradetrust.io%2F%22%2C%22chainId%22%3A%22101010%22%7D%7D"
   },
   "issuer": "did:web:trustvc.github.io:did:1",
   "issuanceDate": "2025-06-06T09:05:43.517Z",
-  "id": "urn:bnid:_:01982c01-f6d3-7bb0-a7bc-2a9b46fefec9",
+  "id": "urn:bnid:_:0198cc80-be99-7660-99b0-844c96be878d",
   "proof": {
     "type": "BbsBlsSignature2020",
-    "created": "2025-07-21T08:03:03Z",
+    "created": "2025-08-21T12:00:46Z",
     "proofPurpose": "assertionMethod",
-    "proofValue": "q8WIO/gpJmcQHWKGP3QWH50Ty68XdV3SlDWSurMDEbko40IEEOVblMUgiNWcKQU7RlaSxD2JLpLDVkHgAJNJ1QTxyXWNjqaaazIo7VHzGtYaodzV9AhTjUiGZNjGSBorH76ul2+cppulXXfZOWzoFQ==",
+    "proofValue": "tndLwyQstFCsSreuwlNizekewSb+XB9AobAeK/TNpYSsYKuZah324MAbSMTcQA1FQHjlVulqDBmsheoihx7Mu2f+Dl7D3dhucTBfcefYHIE0tVToNP+9tYtqNN47ojrJ8OMEyYfKnQ1HolGZPcq+Pg==",
     "verificationMethod": "did:web:trustvc.github.io:did:1#keys-1"
   }
 }
