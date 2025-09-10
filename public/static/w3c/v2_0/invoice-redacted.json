@@ -1,0 +1,39 @@
+{
+  "@context": [
+    "https://www.w3.org/ns/credentials/v2",
+    "https://w3id.org/security/data-integrity/v2",
+    "https://trustvc.io/context/render-method-context-v2.json",
+    "https://trustvc.io/context/invoice.json",
+    "https://trustvc.io/context/qrcode-context.json"
+  ],
+  "id": "urn:uuid:01992e6d-3866-7eea-a1cc-2b10af071b4d",
+  "type": ["VerifiableCredential"],
+  "issuer": "did:web:trustvc.github.io:did:1",
+  "validFrom": "2024-04-01T12:19:52Z",
+  "renderMethod": [
+    {
+      "type": "EMBEDDED_RENDERER",
+      "templateName": "INVOICE",
+      "id": "https://generic-templates.tradetrust.io"
+    }
+  ],
+  "qrCode": {
+    "type": "TrustVCQRCode",
+    "uri": "https://actions.tradetrust.io?q=%7B%22type%22%3A%22DOCUMENT%22%2C%22payload%22%3A%7B%22uri%22%3A%22https%3A%2F%2Fgallery.tradetrust.io%2Fstatic%2Fw3c%2Fv2_0%2Finvoice-redacted.json%22%2C%22redirect%22%3A%22https%3A%2F%2Fref.tradetrust.io%2F%22%2C%22chainId%22%3A%22101010%22%7D%7D"
+  },
+  "credentialSubject": {
+    "type": ["Invoice"],
+    "billToCompanyCity": "London",
+    "billToCompanyPhoneNumber": "+44-20-8899-4455",
+    "billToCompanyPostalCode": "E16 2AA",
+    "billToCompanyStreetAddress": "Unit 17, Royal Wharf, Docklands Industrial Area"
+  },
+  "proof": {
+    "type": "DataIntegrityProof",
+    "created": "2025-09-09T12:22:13Z",
+    "verificationMethod": "did:web:trustvc.github.io:did:1#multikey-1",
+    "cryptosuite": "ecdsa-sd-2023",
+    "proofPurpose": "assertionMethod",
+    "proofValue": "u2V0BhVhAfOS0D1s3YH_2KO4Vi-vNT0fZzzZzp_ed2alTjcNQGDgHjFHeaJuGhdiJBOklQw_vjQu2_4kMrxG2DRqD1eHZkVgjgCQCRumH0vpvFLtBfaMIe_iLwZxqssYYYrRe0ljdeIoyA4OGWEBjjsf3AyzQDgOBMssDTkdURB3U35YJVF3bNG4FinzthmqKfq1tM11IzCtOR35FjJx-erzxiPA3FMdGrdQLaWBJWEA2K1KS_mG8fgqLCxwEFIas9Yu9g28hZJX-mYxzO_tAhk3NFccKDgyXxxJ9fxhjbUOA1c9-8uf8tGZ_8Zl3IU58WEBvrZeefilcUryJVgv8Vbo-uzTT9viWrtNoZ1oiG5UwyLDlCT3x6vL0Nneo3cgkwDldZjFt1h4XN7mrs9CIJY9GWEAeNq8FqMPiDxNHHiXIidF4ZFAAq5BCt9y0St2e9LSNeOz6GJAm8O7KrgOBW0QKIMREoPwtr6kYjPqgJR4B6efQWEDi8EP2G2WjHAp59aCr7OTEzS2zg_S60XSOIk94s8_BwD6xLtWsLI7oKXwTp3nc4dVia3ddZOJFwOpW4KEDHkuBWED1T5mYQcCPKt8IX9OiywfVYJG60hQZowKhnkMcMjx3QtYH04eUGW7PVYBvSVVH9C5MgLq3WR3hTF2GsX4qvbk5ogBYIEKXIoNW5FZ0Q3ozTtGZiVmBOKirgzDLCQPdx1Ilw5yEAVgge4IohGQdhK7hXiH19KVCMhHXJV30S4ljsA1954qTjx-JAAECAwUGBwgJ"
+  }
+}
