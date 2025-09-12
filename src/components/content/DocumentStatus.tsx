@@ -4,6 +4,7 @@ import { Dialog, DialogTrigger } from '@/dialog';
 import { ChevronRightIcon } from 'lucide-react';
 import { Separator } from '@/separator';
 import { StatusProps } from '../../types/types';
+import { sendGAEvent } from '../../lib/gtmService';
 
 export const DocumentStatus = ({ id, title, statuses, selectedSchema, onStatusClick }: StatusProps) => {
   const filteredStatuses = statuses.filter((status) => status.url[selectedSchema] !== '');
@@ -30,7 +31,7 @@ export const DocumentStatus = ({ id, title, statuses, selectedSchema, onStatusCl
                         }
                       >
                         <div className="w-4 h-4 flex items-center justify-center">
-                          <img className="w-[13px] h-[13px]" alt="Qrcode" src="/qrcode.svg" />
+                          <img className="w-[13px] h-[13px]" alt="Qrcode" src="/qrcode.svg" id="qr-code-icon" />
                         </div>
                       </div>
                     </DialogTrigger>
@@ -43,6 +44,14 @@ export const DocumentStatus = ({ id, title, statuses, selectedSchema, onStatusCl
                     target="_blank"
                     rel="noopener noreferrer"
                     className="flex min-w-[180px] items-center p-2 flex-1 justify-between rounded-lg"
+                    onClick={() =>
+                      sendGAEvent({
+                        event: 'document_type',
+                        document_title: title,
+                        document_schema: selectedSchema,
+                        document_status: status.label,
+                      })
+                    }
                   >
                     <span className="font-h5 font-bold text-app-primary">{status.label}</span>
                     <ChevronRightIcon className="w-4 h-4" />

@@ -10,3 +10,5 @@ Thumbs.db
 eslintcache
 .prettiercache
 .netlify/
+.env
+.env.local

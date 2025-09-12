@@ -1,8 +1,8 @@
 import React, { StrictMode } from 'react';
 import { createRoot } from 'react-dom/client';
 import { BrowserRouter, Routes, Route, Navigate } from 'react-router-dom';
-
 import { GalleryMainPage } from './pages/Gallery/GalleryMainPage';
+import './lib/gtmService'; // Import triggers GTM initialization
 
 const App = () => (
   <StrictMode>
