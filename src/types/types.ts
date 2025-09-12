@@ -28,3 +28,7 @@ export type DocumentInfoProps = {
   selectedSchema: string;
   onSchemaChange: (id: number, schema: string) => void;
 };
+
+export type GADataLayerEvent = {
+  event: string;
+} & Record<string, string>;

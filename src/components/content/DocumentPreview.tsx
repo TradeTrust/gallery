@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { Button } from '@/button';
 import { ExpandIcon } from 'lucide-react';
 import { ExpandPreview } from './ExpandPreview';
+import { sendGAEvent } from '../../lib/gtmService';
 
 export const DocumentPreview = ({ image, name, imageAlt }: { image: string; name: string; imageAlt: string }) => {
   const [expandPreview, setExpandPreview] = useState(false);
@@ -17,7 +18,13 @@ export const DocumentPreview = ({ image, name, imageAlt }: { image: string; name
         <Button
           variant="default"
           className="h-9 bg-interactive-componentsolid-bgenabledbgneutraldefault text-interactive-componentsolid-bgenabledcontentdefault rounded-xl"
-          onClick={() => setExpandPreview(true)}
+          onClick={() => {
+            sendGAEvent({
+              event: 'document_preview',
+              preview_title: name,
+            });
+            setExpandPreview(true);
+          }}
         >
           <ExpandIcon className="w-4 h-4 mr-1" />
           <span className="font-headers-paragraphs-header">Expand Preview</span>
