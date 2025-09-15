@@ -21,17 +21,23 @@ export const DocumentStatus = ({ id, title, statuses, selectedSchema, onStatusCl
                     <DialogTrigger asChild>
                       <div
                         className="inline-flex items-center justify-center p-2 rounded-xl border border-[#e2e3e7] cursor-pointer"
-                        onClick={() =>
+                        onClick={() => {
                           onStatusClick({
                             url: status.url[selectedSchema],
                             documentId: id,
                             label: status.label,
                             documentTitle: title,
-                          })
-                        }
+                          });
+                          sendGAEvent({
+                            event: 'document_qr_click',
+                            document_qr_title: title,
+                            document_qr_schema: selectedSchema,
+                            document_qr_status: status.label,
+                          });
+                        }}
                       >
                         <div className="w-4 h-4 flex items-center justify-center">
-                          <img className="w-[13px] h-[13px]" alt="Qrcode" src="/qrcode.svg" id="qr-code-icon" />
+                          <img className="w-[13px] h-[13px]" alt="Qrcode" src="/qrcode.svg" />
                         </div>
                       </div>
                     </DialogTrigger>
