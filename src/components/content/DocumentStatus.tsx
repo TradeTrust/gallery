@@ -22,17 +22,17 @@ export const DocumentStatus = ({ id, title, statuses, selectedSchema, onStatusCl
                       <div
                         className="inline-flex items-center justify-center p-2 rounded-xl border border-[#e2e3e7] cursor-pointer"
                         onClick={() => {
-                          onStatusClick({
-                            url: status.url[selectedSchema],
-                            documentId: id,
-                            label: status.label,
-                            documentTitle: title,
-                          });
                           sendGAEvent({
                             event: 'document_qr_click',
                             document_qr_title: title,
                             document_qr_schema: selectedSchema,
                             document_qr_status: status.label,
+                          });
+                          onStatusClick({
+                            url: status.url[selectedSchema],
+                            documentId: id,
+                            label: status.label,
+                            documentTitle: title,
                           });
                         }}
                       >
