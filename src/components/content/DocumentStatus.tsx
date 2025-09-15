@@ -37,7 +37,7 @@ export const DocumentStatus = ({ id, title, statuses, selectedSchema, onStatusCl
                         }}
                       >
                         <div className="w-4 h-4 flex items-center justify-center">
-                          <img className="w-[13px] h-[13px]" alt="Qrcode" src="/qrcode.svg" />
+                          <img className="w-[13px] h-[13px]" alt="Qrcode" src="/qrcode.svg" id="qr-code-icon" />
                         </div>
                       </div>
                     </DialogTrigger>
