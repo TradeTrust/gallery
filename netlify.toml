@@ -5,4 +5,5 @@
 [[headers]]
   for = "/*"
   [headers.values]
-    Access-Control-Allow-Origin = "*"
+    X-Frame-Options = "DENY"
+    Content-Security-Policy = "frame-ancestors 'none';"
