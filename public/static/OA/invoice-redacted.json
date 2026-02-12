@@ -3,89 +3,85 @@
   "data": {
     "issuers": [
       {
-        "id": "a052a5c3-bd57-4c38-ae02-f7c803b0332b:string:did:ethr:0x433097a1C1b8a3e9188d8C54eCC057B1D69f1638",
-        "name": "89a2ebda-524c-47f5-a879-060d44e98feb:string:DEMO STORE",
+        "id": "718e8b0f-aea9-4aa6-88d9-f10fa008228b:string:did:ethr:0x433097a1C1b8a3e9188d8C54eCC057B1D69f1638",
+        "name": "39c24b94-acc4-4d37-92a5-f1479adeaaeb:string:DEMO STORE",
         "revocation": {
-          "type": "52e98f4c-7b7a-4927-ba6c-3bab33ff288b:string:NONE"
+          "type": "333fddca-42d9-4482-a783-3bb02c4621a9:string:NONE"
         },
         "identityProof": {
-          "type": "f6bf927a-2640-4b81-a92a-23d1784d3b44:string:DID",
-          "key": "210d34fe-78b8-4a76-8764-de1ab6d79014:string:did:ethr:0x433097a1C1b8a3e9188d8C54eCC057B1D69f1638#controller"
+          "type": "f47d8066-edef-4d61-ae07-92d0b3032be5:string:DNS-DID",
+          "key": "e7239ea8-c9e4-4390-88a1-3fb231ed2f69:string:did:ethr:0x433097a1C1b8a3e9188d8C54eCC057B1D69f1638#controller",
+          "location": "79b103ef-45e6-4008-aaa4-466c58c2f474:string:example.tradetrust.io"
         }
       }
     ],
     "billFrom": {
-      "name": "2ad330be-0197-46dc-ac1d-e5a35d6c4d85:string:ABC Exports Pvt. Ltd.",
-      "streetAddress": "d17616a3-83d9-412d-9977-19c96522b282:string:Plot 123, Industrial Area",
-      "city": "bb1371e5-fe78-4fae-8336-b2f651566091:string:Metropolis",
-      "postalCode": "380f2979-f19a-4d3a-8a8e-e54041c6bd77:string:123456",
-      "phoneNumber": "d8cfebf0-0122-46e2-be02-2f79ceba0137:string:+91-11-2222-3333"
+      "name": "bf54c54c-46c0-47ae-bb3d-7ea3347fb298:string:ABC Exports Pvt. Ltd.",
+      "streetAddress": "02e28c9c-de3d-40c2-9f3f-6b70de3b7248:string:Plot 123, Industrial Area",
+      "city": "b017bc42-1d48-4652-9b18-1e6d4e44e82a:string:Metropolis"
     },
     "billTo": {
       "company": {
-        "city": "81ccfe07-d3aa-4033-a250-42f62c58a748:string:Gotham"
+        "city": "45eb6bf1-8259-41e9-a98c-b5fcad32fdaf:string:Gotham"
       },
-      "name": "ebdac399-9125-41d7-961c-106f484992df:string:John Doe"
+      "name": "cd9d1172-3c0b-41f2-8fbf-3340547442fa:string:John Doe"
     },
     "billableItems": [
       {
-        "description": "b35d5ce4-af1c-4731-bd06-091646e1cd82:string:Sample Product A (10kg Packs)",
-        "quantity": "6fe8404c-bb78-4960-8dfe-d46966d4f335:string:50",
-        "unitPrice": "b925f51b-efda-4d24-8236-dd58d1b4f4ab:string:15.00",
-        "amount": "1b9b6fc9-ded8-4f20-bd8d-cffe1c209f02:string:750.00"
+        "description": "5302906d-37bd-4504-ae46-5e3a9b761d85:string:Sample Product A (10kg Packs)",
+        "quantity": "12a6e12c-6f11-4045-bae5-8c7767961541:string:50",
+        "unitPrice": "a4ab5c0f-d9e8-45c0-ac1c-37948e47e140:string:15.00",
+        "amount": "a7a2e3da-a367-43f7-96dd-0437f1f7dbaa:string:750.00"
       },
       {
-        "description": "423a7954-83cc-4c55-ae06-af330db25529:string:Shipping Charges",
-        "quantity": "6014ce11-1076-4f83-8ea9-d3c650d3180f:string:1",
-        "unitPrice": "d926264c-6311-4de4-b74c-8443dc495864:string:100",
-        "amount": "11b306e4-96dd-48fa-8777-3d3177fd49e1:string:100"
+        "description": "dbc99570-3888-4c48-83c7-21e11832f039:string:Shipping Charges",
+        "quantity": "cd5f0506-210b-46d8-b3bc-8d018dedd815:string:1",
+        "unitPrice": "2849eb6b-8a1d-40c1-aa8a-55a7898f4ce7:string:100",
+        "amount": "1d0176e4-4a69-4339-aa59-e181367f0eb0:string:100"
       }
     ],
     "$template": {
-      "type": "f1474a4c-7c6c-47f8-8236-05ba51104944:string:EMBEDDED_RENDERER",
-      "name": "831df383-184a-4cf1-952f-059631c1d07a:string:INVOICE",
-      "url": "220dc63b-d080-4e7d-9ced-feb8860e93bb:string:https://generic-templates.tradetrust.io"
+      "type": "02aeb5c8-7464-4ae2-bf07-2f36ebc1883e:string:EMBEDDED_RENDERER",
+      "name": "015f7625-7e68-4511-a6e3-1e55d02f119e:string:INVOICE",
+      "url": "7786b371-c0ed-4193-a19f-d56e9dc69073:string:https://generic-templates.tradetrust.io"
     },
     "network": {
-      "chain": "91b29938-e87b-43d7-9c96-83dfd818d688:string:FREE",
-      "chainId": "19f83acf-1871-4d0b-a664-735bfcb4d4aa:string:101010"
+      "chain": "d10d6422-72fc-412a-935f-2e082c4b8245:string:FREE",
+      "chainId": "c8ed751a-b151-4ff6-b7ed-40e8030d8b7f:string:101010"
     },
-    "id": "96258e03-718f-46e0-9250-1d39fdd6c8d7:string:INV-FAKE-0001",
-    "date": "f3625433-2c31-4c6b-908c-66ee58f1c734:string:2025-06-18",
-    "customerId": "4ff713a5-245d-4330-b87f-e77447608c46:string:CUST-XYZ-0001",
-    "terms": "a94ee276-3101-48a9-a404-bffbad4730f5:string:Net 15 Days",
-    "subtotal": "d21deba3-6d30-4d43-8724-cc40e6fcd242:string:$850.00",
-    "tax": "25233535-88fd-407a-b08e-5f2844291aef:string:10",
-    "taxTotal": "20645303-a9a4-473e-8368-40f13bd787e5:string:85.00",
-    "total": "9e3a71d9-13a1-40c5-803f-77c6dc81f51f:string:935.00",
+    "id": "beb36e15-cb80-48b5-866c-1eaab7f2d9d1:string:INV-FAKE-0001",
+    "date": "c95d222d-6ec6-4dc8-bff5-022d077f7114:string:2025-06-18",
+    "customerId": "10f00c4b-1e24-4975-aa53-2e178a9cc42b:string:CUST-XYZ-0001",
+    "terms": "095f6b68-d918-4b2e-afc0-f78d8ddba57d:string:Net 15 Days",
+    "subtotal": "94283f96-affd-4525-acb2-40458acfa1c0:string:$850.00",
+    "tax": "c604d81a-3b19-4f58-a275-1ba3870ed708:string:10",
+    "taxTotal": "225d4b8d-d4b1-4206-a053-0879c38891a6:string:85.00",
+    "total": "c9c87fd8-797f-493c-a799-fd5072029c1e:string:935.00",
     "links": {
       "self": {
-        "href": "3329d9ce-4eb6-42b8-a943-0ebb2a81adf6:string:https://actions.tradetrust.io?q=%7B%22type%22%3A%22DOCUMENT%22%2C%22payload%22%3A%7B%22uri%22%3A%22https%3A%2F%2Fgallery.tradetrust.io%2Fstatic%2FOA%2Finvoice-redacted.json%22%2C%22redirect%22%3A%22https%3A%2F%2Fref.tradetrust.io%2F%22%2C%22chainId%22%3A%22101010%22%7D%7D"
+        "href": "0c71fdc5-99f1-4030-91a7-bc8497562679:string:https://actions.tradetrust.io?q=%7B%22type%22%3A%22DOCUMENT%22%2C%22payload%22%3A%7B%22uri%22%3A%22https%3A%2F%2Fgallery.tradetrust.io%2Fstatic%2FOA%2Finvoice-redacted.json%22%2C%22redirect%22%3A%22https%3A%2F%2Fref.tradetrust.io%2F%22%2C%22chainId%22%3A%22101010%22%7D%7D"
       }
     }
   },
   "signature": {
     "type": "SHA3MerkleProof",
-    "targetHash": "5ff9bab91c80d74117b753835a544728d8de02f820f1bd1ffe4b7fc164b0d025",
+    "targetHash": "ee6052e012d9ff6c8c23c1a1105c13d67c168097914e00508089140c0f26f26e",
     "proof": [],
-    "merkleRoot": "5ff9bab91c80d74117b753835a544728d8de02f820f1bd1ffe4b7fc164b0d025"
+    "merkleRoot": "ee6052e012d9ff6c8c23c1a1105c13d67c168097914e00508089140c0f26f26e"
   },
   "proof": [
     {
       "type": "OpenAttestationSignature2018",
-      "created": "2025-08-22T02:31:09.715Z",
+      "created": "2026-02-03T08:27:42.120Z",
       "proofPurpose": "assertionMethod",
       "verificationMethod": "did:ethr:0x433097a1C1b8a3e9188d8C54eCC057B1D69f1638#controller",
-      "signature": "0x17cd237316e975ba4c8c82e9958c486414f9f7bf910449c5cddf724ef71a327b2eb670242781f31f1051e4c26c14fa136e2326209e8e74d016b303ac8653b0d81c"
+      "signature": "0xa2d117819911538cd8011ecda3ea1a5003e090c78d9d7d20ef79e60c3e736c733014ae0800a52a37b328347caf3dcfa61a3331357575f54c4270175a36973ac71c"
     }
   ],
   "privacy": {
     "obfuscatedData": [
-      "8fe822bc01a54284420c925f2a541160fecc8cfa4267b9143a1f8551ae4e32cd",
-      "25715b939c02f745862140d5fcaa8e94eabc721067d9afb6e6728a6206b3c1a8",
-      "730c8a194d0811e021a16666e6a330aae26801dee687ed52528828829cf87673",
-      "c72d7d6c16c03b959e6d922d84ef60f4d7442ee438ee1b865a06641124856d3f",
-      "0a66785a01792bc5659e5cb6330d5932e2d86369de7ed630e1cb7d3bb6a415f2"
+      "92ef8f7def1c9510db5e938b3233c1a401df3e17045c6c06d42d97dda83152ed",
+      "0b34d3f921f8fdcf2f8e197ebcf3f13cc630bbc6f3a3397a86145124e4124db5"
     ]
   }
 }
